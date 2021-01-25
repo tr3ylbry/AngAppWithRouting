@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngWithRoutingAssn';
+  title = 'Angular App With Routing Assignment';
 }
