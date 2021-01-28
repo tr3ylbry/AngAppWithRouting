@@ -6,16 +6,4 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
 })
 
-export class AppComponent {
-  constructor (public router: Router) {
-
-  }
-
-  isHome() {
-    if (this.router.url === '/home') {
-      return "navbar-nav mr-auto home";
-    } else {
-      return "navbar-nav mr-auto feature";
-    }
-  }
-}
+export class AppComponent {}
