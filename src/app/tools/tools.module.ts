@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ToolsRoutingModule } from './tools-routing.module';
 import { ToolsComponent } from './tools.component';
+import { RouterModule } from '@angular/router';
+import { toolsRoutes } from './tools-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,11 +10,7 @@ import { ToolsComponent } from './tools.component';
   ],
   imports: [
     CommonModule,
-    ToolsRoutingModule
-  ],
-  exports: [
-    ToolsComponent
+    RouterModule.forChild(toolsRoutes),
   ]
-
 })
 export class ToolsModule { }

@@ -1,18 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component ({
   selector: 'app-tasks',
-  templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  templateUrl: './tasks.component.html'
 })
 
-export class TasksComponent implements OnInit {
+export class TasksComponent {
 
   title = 'Tasks';
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

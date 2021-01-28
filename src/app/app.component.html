@@ -1,23 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
+<style type="text/css">
+  .navbar-light .navbar-nav .nav-item .nav-link {
+    color: #5193f7;
+}
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <div><a class="nav-link" [routerLink]="['']">Home</a></div>
+  <ul class="navbar-nav mr-auto ft">
+    <li class="nav-item active" >
+      <a class="nav-link" [routerLink]="['']">Home</a>
     </li>
     <li class="nav-item active">
-      <div><a class="nav-link" [routerLink]="['/tasks']">Tasks</a></div>
+      <a class="nav-link" [routerLink]="['/tasks']">Tasks</a>
     </li>
     <li class="nav-item active">
-      <div><a class="nav-link" [routerLink]="['/news']">News</a></div>
+      <a class="nav-link" [routerLink]="['/news']">News</a>
     </li>
     <li class="nav-item active">
-      <div><a class="nav-link" [routerLink]="['/tools']">Tools</a></div>
+      <a class="nav-link" [routerLink]="['/tools']">Tools</a>
     </li>
   </ul>
 </nav>
 
 
-<div class="container">
+<div class="container" style="padding-top: 20px;">
   <router-outlet></router-outlet>
 </div>

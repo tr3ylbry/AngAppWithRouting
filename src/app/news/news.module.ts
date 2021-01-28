@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { NewsRoutingModule } from './news-routing.module';
 import { NewsComponent } from './news.component';
+import { RouterModule } from '@angular/router';
+import { newsRoutes } from './news-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,10 +10,7 @@ import { NewsComponent } from './news.component';
   ],
   imports: [
     CommonModule,
-    NewsRoutingModule
-  ],
-  exports: [
-    NewsComponent
+    RouterModule.forChild(newsRoutes),
   ]
 })
 export class NewsModule { }
