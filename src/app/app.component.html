@@ -1,13 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<style type="text/css">
-  .navbar-light .navbar-nav .nav-item .nav-link {
-    color: #5193f7;
-}
-</style>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <ul class="navbar-nav mr-auto ft">
+  <ul [class]="isHome()">
     <li class="nav-item active" >
       <a class="nav-link" [routerLink]="['']">Home</a>
     </li>

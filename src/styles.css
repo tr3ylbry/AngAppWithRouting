@@ -10,6 +10,10 @@
    margin-right: 15px;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link {
-    color:black;
+.navbar-light .home .nav-item .nav-link {
+    color: #5193f7;
+}
+
+.navbar-light .feature .nav-item .nav-link {
+    color: black;
 }
